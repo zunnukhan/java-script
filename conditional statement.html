@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p>Click on the button to have a time based greeting</p>  
+ <button onclick="mfunction()" >Try it</button>
+ <p id="hour"></p>
+<p id="greeting"></p>
+<script>
+    function mfunction(){
+        var greeting;
+        var time=new Date().getHours();
+        if(time<10){
+            greeting="good morning";
+        }
+        else if (time < 20) {
+            greeting = "good Day";
+        }
+        else {
+            greeting = "good evening";
+        }
+        document.getElementById("hour").innerHTML="currunt hour is:"+time;
+        document.getElementById("greeting").innerHTML = greeting;}
+</script>    
+
+</body>
+</html>
