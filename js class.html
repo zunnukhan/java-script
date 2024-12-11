@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="friend1"></p>
+    <p id="friend2"></p>
+<script>
+    class friend{
+        constructor (name,birthyear){
+            this.name=name;
+            this.birthyear=birthyear;
+        }
+        age(){
+            let date=  new Date();
+            return date.getFullYear()- this.birthyear;
+        }
+            
+    }
+     friend1=new friend("Anushka", 2012);
+        document.getElementById("friend1").innerHTML =  
+            "my name is" + friend1.name + ".i born in" + friend1.birthyear + "And my age is" + friend1.age();
+
+        friend2=new friend("Janvi", 2013);
+        document.getElementById("friend2").innerHTML =
+            "my name is" + friend2.name + ".i born in" + friend2.birthyear + "And my age is" + friend2.age();
+</script>
+
+</body>
+</html>
