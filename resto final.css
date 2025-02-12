@@ -1,0 +1,45 @@
+.footer{
+  position: fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  background-color:purple;
+  color:white;
+  text-align:center;
+}
+body{
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+.topnav{
+overflow: hidden;
+background-color: #333;
+}
+.topnav a{
+float: left;
+color: deeppink;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.topnav a:hover{
+background-color: blueviolet;
+color: deepskyblue;
+}
+topnav a.active{
+background-color: yellowgreen;
+color: aquamarine;
+}
+.carousel-container{
+  display:flex:
+  justify-content: center;
+  aling-item:center;
+  height: 300px
+}
+.myslides{
+  display: none;
+  max-height:100%;
+  max-width:100%;
+}
+  
